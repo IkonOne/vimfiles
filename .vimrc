@@ -8,17 +8,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-NeoBundle 'nosami/Omnisharp'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tomasr/molokai'
-NeoBundle 'reedes/vim-colors-pencil'
-NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'sickill/vim-monokai'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'jdonaldson/vaxe'
 NeoBundle 'majutsushi/tagbar'
-NeoBundle 'Valloric/YouCompleteMe'
-NeoBundle 'jdonaldson/vaxe'
-NeoBundle 'SirVer/ultisnips'
 
 call neobundle#end()
 filetype plugin indent on
@@ -36,11 +28,11 @@ set shiftwidth=4
 set autowrite
 
 " ctags
-set tags=tags;
+" set tags=tags;
 
 " colors
 syntax on
-colorscheme molokai
+colorscheme monokai
 "  colorscheme pencil
 "  set background=light
 
@@ -53,14 +45,14 @@ nmap <F8> :TagbarToggle<CR>
 
 " ----- NerdTree -----
 
-nmap <F7> :NERDTreeToggle<CR>
+" nmap <F7> :NERDTreeToggle<CR>
 
 " ---- OmniSharp ----
 
-filetype plugin on
-set noshowmatch
+" filetype plugin on
+" set noshowmatch
 
-autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
+" autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
 
 " ---- Ultisnips ----
 
